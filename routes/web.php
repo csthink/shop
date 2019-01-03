@@ -18,3 +18,4 @@
 
 //Route::get('/', ['uses' => 'PagesController@root']);
 Route::get('/', 'PagesController@root')->name('root');
+Auth::routes();

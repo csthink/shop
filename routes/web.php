@@ -11,11 +11,5 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-
-
-//Route::get('/', ['uses' => 'PagesController@root']);
 Route::get('/', 'PagesController@root')->name('root');
-Auth::routes();
+Auth::routes(['verify' => true]);
